@@ -1,0 +1,27 @@
+﻿@*
+    
+This is Addclub view
+here We are loading partialview  using
+@Html.Partial("_AddClubPartialView", Model)    
+*@
+
+
+@model SoccerClubManagementSystem.Models.Club
+@{
+    ViewBag.Title = "AddClub";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@using (Html.BeginForm("AddClub", "Club", FormMethod.Post))
+{
+
+    @Html.Partial("_AddClubPartialView", Model)
+
+    <p>
+        <input type="submit" value="Save" /> <input type="button" value="cancel" onclick="window.location.href='@Url.Action("Index", "Home")'" />
+    </p>
+
+}
+

@@ -1,0 +1,61 @@
+﻿@model SoccerClubManagementSystem.Models.Club
+
+
+@Html.ValidationSummary(true)
+
+<fieldset>
+    <legend>Add New Club</legend>
+
+    <div class="editor-label">
+        <label>Club Name</label>
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.ClubName)
+        @Html.ValidationMessageFor(model => model.ClubName)
+    </div>
+
+    <div class="editor-label">
+        <label>Club Address</label>
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.ClubAddress)
+        @Html.ValidationMessageFor(model => model.ClubAddress)
+    </div>
+
+    <div class="editor-label">
+        <label>Club Contact</label>
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Clubcontact)
+        @Html.ValidationMessageFor(model => model.Clubcontact)
+    </div>
+
+    <div class="editor-label">
+        <label>Club Email</label>
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.ClubEmail)
+        @Html.ValidationMessageFor(model => model.ClubEmail)
+    </div>
+
+    <div class="editor-label">
+        <label>Club Contact Person</label>
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.ClubContactPerson)
+        @Html.ValidationMessageFor(model => model.ClubContactPerson)
+    </div>
+
+    <div class="editor-label">
+        <label>Club City</label>
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.ClubCity)
+        @Html.ValidationMessageFor(model => model.ClubCity)
+    </div>
+
+
+</fieldset>
+
+
+

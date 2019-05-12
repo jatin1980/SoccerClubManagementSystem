@@ -1,0 +1,32 @@
+﻿
+@model IEnumerable<SoccerClubManagementSystem.Models.Club>
+
+<table id="clubs">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ClubId</td>
+            <td>@item.ClubName</td>
+            <td>@item.ClubAddress</td>
+            <td>@item.ClubCity</td>
+            <td>
+
+                @Html.ActionLink("Details", "Details", new { id = item.ClubId })
+            </td>
+
+
+        </tr>
+
+    }
+
+
+
+
+</table>

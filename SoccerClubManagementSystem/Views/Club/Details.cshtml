@@ -1,0 +1,37 @@
+﻿@model SoccerClubManagementSystem.Models.Club
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>@Model.ClubName  Details</h2>
+
+<table id="clubs" style="width:300px;">
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.ClubName)</td>
+        <td>@Html.DisplayFor(model => model.ClubName)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.ClubAddress)</td>
+        <td>@Html.DisplayFor(model => model.ClubAddress)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.ClubCity)</td>
+        <td>@Html.DisplayFor(model => model.ClubCity)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.Clubcontact)</td>
+        <td>@Html.DisplayFor(model => model.Clubcontact)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.ClubEmail)</td>
+        <td>@Html.DisplayFor(model => model.ClubEmail)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.ClubContactPerson)</td>
+        <td>@Html.DisplayFor(model => model.ClubContactPerson)</td>
+    </tr>
+</table>
+@Html.ActionLink("Back to List", "Index")
+

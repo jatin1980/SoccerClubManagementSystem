@@ -1,0 +1,21 @@
+﻿@*
+This is view in Which we are displaying list of Club using partial view
+Following line is loading partialview 
+@Html.Partial("_ListClubPartialView", Model)
+    
+*@
+
+
+@model IEnumerable<SoccerClubManagementSystem.Models.Club>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@Html.ActionLink("Add New Club", "AddClub")
+
+@Html.Partial("_ListClubPartialView", Model)
